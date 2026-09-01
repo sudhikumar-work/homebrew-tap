@@ -1,25 +1,25 @@
 class K9x < Formula
   desc "Event-driven Kubernetes TUI + agent CLI — ultra-fast, single binary"
   homepage "https://github.com/sudhikumar-work/k9x"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/sudhikumar-work/k9x/releases/download/v#{version}/k9x-#{version}-darwin-arm64.tar.gz"
-      sha256 "bac6ad8b37d8187f6df32e3f1c5910f18e863d0a1d373382c2e2a36397aa1ff3"
+      sha256 "8ac0ed5282088e61c44bfd40da4dbdd2b2c599c94de498613e60cb822868beaf"
     else
       url "https://github.com/sudhikumar-work/k9x/releases/download/v#{version}/k9x-#{version}-darwin-amd64.tar.gz"
-      sha256 "f4d76aaad8551a89e4968b1597593030312c742228ae892e399d6310a87bab38"
+      sha256 "cccc133f6eb4384eb0235f367fc384a3d666203f057c2d1773fd50cb439c2be6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/sudhikumar-work/k9x/releases/download/v#{version}/k9x-#{version}-linux-arm64.tar.gz"
-      sha256 "51a20375152160577e205fdd92709d012387e17dc81c77182fa88bceabddefda"
+      sha256 "83b4174b663f97dc32b4b56196ff7c917a7876ad8e5f76f5a553148dc7fc1f0a"
     else
       url "https://github.com/sudhikumar-work/k9x/releases/download/v#{version}/k9x-#{version}-linux-amd64.tar.gz"
-      sha256 "62cd007783c68469004b3190f465a08edea9f95bf5af2509a75152b1af65117c"
+      sha256 "b0292c18aa6cec149eabbc7ab3944f06851bfb8f54265d36c0c01a010ca95397"
     end
   end
 
